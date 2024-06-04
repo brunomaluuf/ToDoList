@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+
+form input[type="text"],
+form input[type="date"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    opacity: 0.5;
+}
+
+li .task-date {
+    margin-left: 10px;
+    font-style: italic;
+    color: #888;
+}
+
+li .btn-group {
+    display: flex;
+    gap: 5px;
+}
+
+li .btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+li .delete-btn:hover {
+    background-color: #c82333;
+}
+
+li .complete-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+li .complete-btn:hover {
+    background-color: #218838;
+}
+
+li .incomplete-btn {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+li .incomplete-btn:hover {
+    background-color: #e0a800;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; 
+}
+
+form textarea {
+    height: 100px; 
+    min-height: 100px; 
+}
+
