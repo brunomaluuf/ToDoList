@@ -16,35 +16,6 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin: 0 auto;
-}
-
-h1 {
-    text-align: center;
-}
-
-form {
-    display: flex;
-    margin-bottom: 20px;
-    gap: 10px;
-
-form input[type="text"],
-form input[type="date"] {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
 }
 
 li {
@@ -54,8 +25,7 @@ li {
     border-radius: 4px;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Mudar para column para alinhar itens verticalmente */
 }
 
 li.completed {
@@ -63,14 +33,25 @@ li.completed {
 }
 
 li .task-date {
-    margin-left: 10px;
+    margin-top: 5px; /* Espaço entre o texto e a data */
     font-style: italic;
     color: #888;
+}
+
+li .task-obs {
+    margin-top: 5px; /* Espaço entre a data e a observação */
+    color: #555;
+    white-space: pre-wrap; /* Preserva quebras de linha */
+    word-wrap: break-word; /* Quebra palavras longas */
+    overflow: hidden;
+    height: 50px; /* Altura inicial */
+    resize: none; /* Desativar redimensionamento manual */
 }
 
 li .btn-group {
     display: flex;
     gap: 5px;
+    margin-top: 10px; /* Espaço entre os botões e o texto */
 }
 
 li .btn {
@@ -108,24 +89,17 @@ li .incomplete-btn:hover {
 }
 
 
-form {
-    display: flex;
-    flex-direction: column; 
-    margin-bottom: 20px;
-}
 
-form input[type="text"],
-form input[type="date"],
-form textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+li .expand-btn {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
     border-radius: 4px;
-    resize: vertical; 
+    margin-left: 5px; /* Espaço entre os botões */
 }
 
-form textarea {
-    height: 100px; 
-    min-height: 100px; 
+li .expand-btn:hover {
+    background-color: #0056b3;
 }
-
